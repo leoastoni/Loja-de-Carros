@@ -3,17 +3,17 @@
 
 Trabalho Interdisciplinar - Aplicacões Web
 
-`CURSO`: 
+`CURSO`: Sistemas de Informação
 
-`SEMESTRE:`
+`SEMESTRE:` Primeiro semestre
 
 `OBJETIVO ODS:` > Inclua os numeros e a descrição do(s) objetivo(s) ODS da ONU que o Projeto vai atender. 
 
 ## Participantes
 
 Os membros do grupo são: 
-- Fulano da Silva
-- Ciclano Albuquerque
+- Leonardo Mendes Astoni Ferreira
+- 
 
 > Inclua a lista dos membros da equipe com seus nomes completos.
 
