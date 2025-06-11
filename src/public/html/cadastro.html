@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Loja de Carros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/public/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Loja de Carros</h1>
+    </header>
+
+    <aside class="sidebar">
+        <nav>
+          <a href="index.html" class="botao-menu">Home</a>
+          <a href="login.html" class="botao-menu">Login</a>
+          <a href="cadastro.html" class="botao-menu">Cadastrar</a>
+          <a href="detalhes.html" class="botao-menu">Parceiros</a>
+          <a href="informacao.html" class="botao-menu">Informações</a>
+        </nav>
+      </aside>
+
+    <section class="">
+        <div class="container pb-2 pt-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card text-white" style="border-radius: 1rem; background-color: #222;">
+                        <div class="card-body p-5 text-center">
+
+                            <div class="mb-md-4 mt-md-2">
+
+                                <div class="text-center">
+                                    <img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-white-sms-icon-image_1344881.jpg"
+                                      style="width: 150px; border-radius: 1rem; height: 140px;" alt="logo">
+                                </div>
+
+                                <h2 class="fw-bold mb-3 mt-2">Cadastro</h2>
+
+                                <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
+                                    <label class="form-label mb-0" for="typeCadastroNome">Nome</label>
+                                    <input type="text" id="typeCadastroNome" class="form-control" />
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
+                                    <label class="form-label mb-0" for="typeCadastroEmail">E-mail</label>
+                                    <input type="email" id="typeCadastroEmail" class="form-control" />
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
+                                    <label class="form-label mb-0" for="typeCadastroTelefone">Telefone</label>
+                                    <input type="number" id="typeCadastroTelefone" class="form-control" />
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline form-white mb-5 text-start">
+                                    <label class="form-label mb-0" for="typeCadastroSenha">Senha</label>
+                                    <input type="password" id="typeCadastroSenha" class="form-control" />
+                                </div>
+
+                                <button data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+
+                            </div>
+
+                            <div>
+                                <p class="mb-0">Já possui conta? <a href="login.html" class="text-white-50 fw-bold">Login</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Loja de Carros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
