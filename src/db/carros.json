@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "nome": "Jeep Compass",
+    "marca": "Jeep",
+    "ano": "2021",
+    "km": "85.000 km",
+    "preco": "R$ 129.900",
+    "imagem": "/img/carro1.jpg",
+    "info": "SUV completo, ótimo estado."
+  },
+  {
+    "id": 2,
+    "nome": "Audi RS5",
+    "marca": "Audi",
+    "ano": "2020/2021",
+    "km": "30.000 km",
+    "preco": "R$540.000",
+    "imagem": "/img/carro2.jpg",
+    "info": "Esportivo de luxo, alto desempenho."
+  },
+  {
+    "id": 3,
+    "nome": "RAM 1500",
+    "marca": "RAM",
+    "ano": "2023/2024",
+    "km": "0 km",
+    "preco": "R$499.000",
+    "imagem": "/img/carro3.jpg",
+    "info": "Picape robusta, ideal para trabalho e lazer."
+  },
+  {
+    "id": 4,
+    "nome": "Porsche 911",
+    "marca": "Porsche",
+    "ano": "2023/2024",
+    "km": "130 km",
+    "preco": "R$1.250.000",
+    "imagem": "/img/carro4.jpg",
+    "info": "Clássico esportivo, design icônico."
+  },
+  {
+    "id": 5,
+    "nome": "Porsche 718",
+    "marca": "Porsche",
+    "ano": "2023",
+    "km": "1.200 km",
+    "preco": "R$699.000",
+    "imagem": "/img/carro5.webp",
+    "info": "Conversível esportivo, ótimo para viagens."
+  },
+  {
+    "id": 6,
+    "nome": "BMW M3",
+    "marca": "BMW",
+    "ano": "2022",
+    "km": "5.000 km",
+    "preco": "R$560.000",
+    "imagem": "/img/carro6.webp",
+    "info": "Sedan esportivo, alta performance."
+  },
+  {
+    "id": 7,
+    "nome": "BMW X6",
+    "marca": "BMW",
+    "ano": "2022/2023",
+    "km": "3.100 km",
+    "preco": "R$850.000",
+    "imagem": "/img/carro7.jpg",
+    "info": "SUV de luxo, conforto e potência."
+  },
+  {
+    "id": 8,
+    "nome": "Honda Civic",
+    "marca": "Honda",
+    "ano": "2023/2024",
+    "km": "0 km",
+    "preco": "R$230.000",
+    "imagem": "/img/carro8.jpg",
+    "info": "Sedan confiável, econômico e moderno."
+  },
+  {
+    "id": 9,
+    "nome": "Ford Mustang",
+    "marca": "Ford",
+    "ano": "2022",
+    "km": "4.500 km",
+    "preco": "R$470.000",
+    "imagem": "/img/carro9.jpg",
+    "info": "Muscle car clássico, potência e estilo."
+  },
+  {
+    "id": 10,
+    "nome": "Toyota Corolla",
+    "marca": "Toyota",
+    "ano": "2025",
+    "km": "0 km",
+    "preco": "R$205.000",
+    "imagem": "/img/carro10.webp",
+    "info": "Sedan líder de vendas, tecnologia e conforto."
+  },
+  {
+    "id": 11,
+    "nome": "Byd Seal",
+    "marca": "BYD",
+    "ano": "2023/2024",
+    "km": "0 km",
+    "preco": "R$230.000",
+    "imagem": "/img/carro11.jpg",
+    "info": "Elétrico moderno, autonomia e inovação."
+  },
+  {
+    "id": 12,
+    "nome": "Chevrolet Opala",
+    "marca": "Chevrolet",
+    "ano": "1991",
+    "km": "120.000 km",
+    "preco": "R$80.000",
+    "imagem": "/img/carro12.webp",
+    "info": "Clássico nacional, ótimo para colecionadores."
+  },
+  {
+    "id": 13,
+    "nome": "Volkswagen Golf",
+    "marca": "Volkswagen",
+    "ano": "2015",
+    "km": "93.400 km",
+    "preco": "R$135.000",
+    "imagem": "/img/carro13.webp",
+    "info": "Hatch esportivo, desempenho e conforto."
+  },
+  {
+    "id": 14,
+    "nome": "Ferrari 812 GTS",
+    "marca": "Ferrari",
+    "ano": "2023",
+    "km": "470 km",
+    "preco": "R$6.900.000",
+    "imagem": "/img/carro14.jpg",
+    "info": "Superesportivo de luxo, exclusividade máxima."
+  },
+  {
+    "id": 15,
+    "nome": "Cadillac Escalade",
+    "marca": "Cadillac",
+    "ano": "2025",
+    "km": "0 km",
+    "preco": "R$2.300.000",
+    "imagem": "/img/carro15.webp",
+    "info": "SUV premium, espaço e sofisticação."
+  },
+  {
+    "id": 1749756301116,
+    "nome": "Uno",
+    "marca": "Fiat",
+    "ano": "2010",
+    "km": "150.000",
+    "preco": "R$12.000",
+    "imagem": "https://s3.ecompletocarros.dev/images/lojas/375/veiculos/146925/veiculoInfoVeiculoImagesMobile/vehicle_image_1685251511_d41d8cd98f00b204e9800998ecf8427e.jpeg",
+    "info": "Carro econômico e simples para o dia a dia."
+  },
+  {
+    "id": 1749756509691,
+    "nome": "Civic",
+    "marca": "Honda",
+    "ano": "2020",
+    "km": "65.000",
+    "preco": "R$110.000",
+    "imagem": "https://revistacarro.com.br/wp-content/uploads/2019/11/Honda-Civic-EXL-1.jpg",
+    "info": "Carro confortável para a família."
+  }
+]
