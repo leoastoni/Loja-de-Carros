@@ -10,24 +10,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Loja de Carros</h1>
+        <h1>Loja de Carros Cadastro</h1>
     </header>
 
     <aside class="sidebar">
         <nav>
-          <a href="index.html" class="botao-menu">Home</a>
-          <a href="login.html" class="botao-menu">Login</a>
-          <a href="cadastro.html" class="botao-menu">Cadastrar</a>
-          <a href="detalhes.html" class="botao-menu">Parceiros</a>
-          <a href="informacao.html" class="botao-menu">Informações</a>
+            <a href="index.html" class="botao-menu">Home</a>
+            <a href="login.html" class="botao-menu">Login</a>
+            <a href="cadastro.html" class="botao-menu">Cadastrar</a>
+            <a href="detalhes.html" class="botao-menu">Parceiros</a>
+            <a href="informacao.html" class="botao-menu">Informações</a>
         </nav>
-      </aside>
+    </aside>
 
     <section class="">
         <div class="container pb-2 pt-5 h-100">
@@ -40,33 +40,42 @@
 
                                 <div class="text-center">
                                     <img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-white-sms-icon-image_1344881.jpg"
-                                      style="width: 150px; border-radius: 1rem; height: 140px;" alt="logo">
+                                        style="width: 150px; border-radius: 1rem; height: 140px;" alt="logo">
                                 </div>
 
                                 <h2 class="fw-bold mb-3 mt-2">Cadastro</h2>
 
-                                <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
-                                    <label class="form-label mb-0" for="typeCadastroNome">Nome</label>
-                                    <input type="text" id="typeCadastroNome" class="form-control" />
-                                </div>
+                                <form id="cadastroForm">
+                                    <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
+                                        <label class="form-label mb-0" for="typeCadastroNome">Nome</label>
+                                        <input type="text" id="typeCadastroNome" class="form-control" required/>
+                                    </div>
 
-                                <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
-                                    <label class="form-label mb-0" for="typeCadastroEmail">E-mail</label>
-                                    <input type="email" id="typeCadastroEmail" class="form-control" />
-                                </div>
+                                    <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
+                                        <label class="form-label mb-0" for="typeCadastroEmail">E-mail</label>
+                                        <input type="email" id="typeCadastroEmail" class="form-control" required/>
+                                    </div>
 
-                                <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
-                                    <label class="form-label mb-0" for="typeCadastroTelefone">Telefone</label>
-                                    <input type="number" id="typeCadastroTelefone" class="form-control" />
-                                </div>
+                                    <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
+                                        <label class="form-label mb-0" for="typeCadastroTelefone">Telefone</label>
+                                        <input type="number" id="typeCadastroTelefone" class="form-control" />
+                                    </div>
 
-                                <div data-mdb-input-init class="form-outline form-white mb-5 text-start">
-                                    <label class="form-label mb-0" for="typeCadastroSenha">Senha</label>
-                                    <input type="password" id="typeCadastroSenha" class="form-control" />
-                                </div>
+                                    <div data-mdb-input-init class="form-outline form-white mb-5 text-start">
+                                        <label class="form-label mb-0" for="typeCadastroSenha">Senha</label>
+                                        <input type="password" id="typeCadastroSenha" class="form-control" required/>
+                                    </div>
 
-                                <button data-mdb-button-init data-mdb-ripple-init
-                                    class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                                    <div class="form-check form-white mb-4 text-start">
+                                        <input class="form-check-input" type="checkbox" value="" id="typeCadastroAdmin" />
+                                        <label class="form-check-label" for="typeCadastroAdmin">
+                                            Conta de administrador
+                                        </label>
+                                    </div>
+
+                                    <button data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                                </form>
 
                             </div>
 
@@ -85,6 +94,21 @@
     <footer>
         <p>&copy; 2025 Loja de Carros. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="loginCadastro.js"></script>
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('typeCadastroNome').value;
+            const email = document.getElementById('typeCadastroEmail').value;
+            const telefone = document.getElementById('typeCadastroTelefone').value;
+            const senha = document.getElementById('typeCadastroSenha').value;
+            const isAdmin = document.getElementById('typeCadastroAdmin').checked;
+
+            addUser(nome, email, telefone, senha, isAdmin);
+        });
+    </script>
 </body>
 
 </html>
