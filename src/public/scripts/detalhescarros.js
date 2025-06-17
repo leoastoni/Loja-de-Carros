@@ -15,4 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.preco-item').textContent = carro.preco;
       document.querySelector('.info-item').textContent = carro.info;
     });
+  
+  document.querySelector('.btn-excluir').addEventListener('click', () => {
+    if (confirm('Tem certeza que deseja excluir este carro?')) {
+      fetch(`/api/carros/${id}`, { method: 'DELETE' })
+        .then(res => {
+          if (res.ok) {
+            alert('Carro excluído com sucesso!');
+            window.location.href = '/html/index.html';
+          } else {
+            alert('Erro ao excluir carro.');
+          }
+        });
+    }
+  });
+  
+  document.querySelector('.btn-editar').addEventListener('click', () => {
+    window.location.href = `/html/editarcarro.html?id=${id}`;
+  });
 });

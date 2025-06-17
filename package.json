@@ -1,6 +1,28 @@
 {
   "dependencies": {
+    "express": "^5.1.0",
     "json-server": "^1.0.0-beta.3",
     "server.js": "^1.0.0"
-  }
+  },
+  "name": "loja-de-carros",
+  "version": "1.0.0",
+  "description": "`TÍTULO DO PROJETO`",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoastoni/Loja-de-Carros.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoastoni/Loja-de-Carros/issues"
+  },
+  "homepage": "https://github.com/leoastoni/Loja-de-Carros#readme"
 }
