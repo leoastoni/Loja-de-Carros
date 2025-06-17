@@ -17,6 +17,7 @@ Os membros do grupo são:
 - Samuel Storck de Paula
 - Harisson França Pedrosa
 - Bruno Lana Machado
+- Gabriel Henrique Morais Trotta 
 
 > Inclua a lista dos membros da equipe com seus nomes completos.
 

@@ -14,7 +14,7 @@ const carrosPath = path.join(__dirname, '../src/db/carros.json');
 
 // Middleware para aceitar JSON
 app.use(express.json());
-
+app.use('/db', express.static(path.join(__dirname, '../src/db')));
 // Listar todos os carros
 app.get('/api/carros', (req, res) => {
   fs.readFile(carrosPath, 'utf8', (err, data) => {
@@ -45,5 +45,29 @@ app.get('/api/carros/:id', (req, res) => {
     const carro = carros.find(c => String(c.id) === req.params.id);
     if (!carro) return res.status(404).json({ erro: 'Carro não encontrado' });
     res.json(carro);
+  });
+});
+
+const usuariosPath = path.join(__dirname, '../src/db/usuarios.json');
+
+// Listar todos os usuários
+app.get('/api/usuarios', (req, res) => {
+  fs.readFile(usuariosPath, 'utf8', (err, data) => {
+    if (err) return res.status(500).json({ erro: 'Erro ao ler o arquivo' });
+    const usuarios = data ? JSON.parse(data) : { usuarios: [] };
+    res.json(usuarios);
+  });
+});
+
+// Cadastrar novo usuário
+app.post('/api/usuarios', (req, res) => {
+  fs.readFile(usuariosPath, 'utf8', (err, data) => {
+    let usuariosObj = data ? JSON.parse(data) : { usuarios: [] };
+    const novoUsuario = req.body;
+    usuariosObj.usuarios.push(novoUsuario);
+    fs.writeFile(usuariosPath, JSON.stringify(usuariosObj, null, 2), err => {
+      if (err) return res.status(500).json({ erro: 'Erro ao salvar' });
+      res.status(201).json(novoUsuario);
+    });
   });
 });

@@ -1,5 +1,5 @@
 const LOGIN_URL = "login.html";
-const apiUrl = 'http://127.0.0.1:5500/Loja-de-Carros/src/db/usuarios.json'; 
+const apiUrl = '/api/usuarios';
 
 var db_usuarios = []; 
 
@@ -36,7 +36,7 @@ function initLoginApp () {
             return response.json();
         })
         .then(data => {
-            db_usuarios = data;
+            db_usuarios = data.usuarios;
         })
         .catch(error => {
             console.error('Erro ao ler usuários via API JSONServer:', error);
