@@ -1,5 +1,5 @@
 const LOGIN_URL = "login.html";
-const apiUrl = 'http://localhost:3000/usuarios'; 
+const apiUrl = 'http://127.0.0.1:5500/Loja-de-Carros/src/db/usuarios.json'; 
 
 var db_usuarios = []; 
 
