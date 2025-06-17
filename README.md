@@ -13,7 +13,10 @@ Trabalho Interdisciplinar - Aplicacões Web
 
 Os membros do grupo são: 
 - Leonardo Mendes Astoni Ferreira
-- 
+- Júlio César Pereira e Castro
+- Samuel Storck de Paula
+- Harisson França Pedrosa
+- Bruno Lana Machado
 
 > Inclua a lista dos membros da equipe com seus nomes completos.
 

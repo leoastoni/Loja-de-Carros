@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('filme-form');
   const tbody = document.getElementById('filmes-tbody');
 
-  // Carregar carros cadastrados
   function carregarCarros() {
     fetch('/api/carros')
       .then(res => res.json())
@@ -17,15 +16,38 @@ document.addEventListener('DOMContentLoaded', () => {
             <td>${carro.km}</td>
             <td><img src="${carro.imagem}" class="filme-imagem" style="max-width:60px"></td>
             <td>${carro.info}</td>
+            <td>
+              <button class="btn-editar" data-id="${carro.id}">Editar</button>
+              <button class="btn-excluir" data-id="${carro.id}">Excluir</button>
+            </td>
           `;
           tbody.appendChild(tr);
+        });
+
+        tbody.querySelectorAll('.btn-excluir').forEach(btn => {
+          btn.addEventListener('click', function () {
+            const id = this.getAttribute('data-id');
+            if (confirm('Tem certeza que deseja excluir este carro?')) {
+              fetch(`/api/carros/${id}`, { method: 'DELETE' })
+                .then(res => {
+                  if (res.ok) carregarCarros();
+                  else alert('Erro ao excluir carro.');
+                });
+            }
+          });
+        });
+
+        tbody.querySelectorAll('.btn-editar').forEach(btn => {
+          btn.addEventListener('click', function () {
+            const id = this.getAttribute('data-id');
+            window.location.href = `/html/editarcarro.html?id=${id}`;
+          });
         });
       });
   }
 
   carregarCarros();
 
-  // Cadastro de novo carro
   form.addEventListener('submit', e => {
     e.preventDefault();
     const novoCarro = {
@@ -42,10 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(novoCarro)
     })
-      .then(res => res.json())
-      .then(() => {
-        form.reset();
-        carregarCarros();
+      .then(res => {
+        if (res.ok) {
+          form.reset();
+          carregarCarros();
+        } else {
+          alert('Erro ao cadastrar carro.');
+        }
       });
   });
 });
