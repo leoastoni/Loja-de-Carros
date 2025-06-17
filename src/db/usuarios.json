@@ -1,0 +1,44 @@
+{
+  "usuarios": [
+    {
+      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com",
+      "admin": true
+    },
+    {
+      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com",
+      "admin": false
+    },
+    {
+      "id": "171022ee-09b0-468a-962a-9c0772753cd0",
+      "login": "samuel",
+      "senha": "12345",
+      "nome": "Samuel Teste",
+      "email": "samuel@abc.com",
+      "admin": true
+    },
+    {
+      "id": "cd18228b-796b-4022-b5ce-f35034871a1d",
+      "nome": "testeAdmin",
+      "email": "testeadmin@admin.com",
+      "telefone": "987654321",
+      "senha": "123",
+      "admin": true
+    },
+    {
+      "id": "60938565-05e5-4b7e-bd4f-40f56c5b0da0",
+      "nome": "novouser",
+      "email": "novouser@user.com",
+      "telefone": "123",
+      "senha": "123",
+      "admin": false
+    }
+  ]
+}

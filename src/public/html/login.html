@@ -10,24 +10,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Loja de Carros</h1>
+        <h1>Loja de Carros Login</h1>
     </header>
 
     <aside class="sidebar">
-            <nav>
-              <a href="index.html" class="botao-menu">Home</a>
-              <a href="login.html" class="botao-menu">Login</a>
-              <a href="cadastro.html" class="botao-menu">Cadastrar</a>
-              <a href="detalhes.html" class="botao-menu">Parceiros</a>
-              <a href="informacao.html" class="botao-menu">Informações</a>
-            </nav>
-          </aside>
+        <nav>
+            <a href="index.html" class="botao-menu">Home</a>
+            <a href="login.html" class="botao-menu">Login</a>
+            <a href="cadastro.html" class="botao-menu">Cadastrar</a>
+            <a href="detalhes.html" class="botao-menu">Parceiros</a>
+            <a href="informacao.html" class="botao-menu">Informações</a>
+        </nav>
+    </aside>
 
     <section class="">
         <div class="container pb-2 pt-5 h-100">
@@ -40,23 +40,25 @@
 
                                 <div class="text-center">
                                     <img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-white-sms-icon-image_1344881.jpg"
-                                      style="width: 150px; border-radius: 1rem; height: 140px;" alt="logo">
+                                        style="width: 150px; border-radius: 1rem; height: 140px;" alt="logo">
                                 </div>
 
                                 <h2 class="fw-bold mb-3 mt-2">Login</h2>
 
-                                <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
-                                    <label class="form-label mb-0" for="typeLoginEmail">E-mail</label>
-                                    <input type="email" id="typeLoginEmail" class="form-control" />
-                                </div>
+                                <form id="loginForm">
+                                    <div data-mdb-input-init class="form-outline form-white mb-3 text-start">
+                                        <label class="form-label mb-0" for="typeLoginEmail">E-mail</label>
+                                        <input type="email" id="typeLoginEmail" class="form-control" required/>
+                                    </div>
 
-                                <div data-mdb-input-init class="form-outline form-white mb-5 text-start">
-                                    <label class="form-label mb-0" for="typeLoginSenha">Senha</label>
-                                    <input type="password" id="typeLoginSenha" class="form-control" />
-                                </div>
+                                    <div data-mdb-input-init class="form-outline form-white mb-5 text-start">
+                                        <label class="form-label mb-0" for="typeLoginSenha">Senha</label>
+                                        <input type="password" id="typeLoginSenha" class="form-control" required/>
+                                    </div>
 
-                                <button data-mdb-button-init data-mdb-ripple-init
-                                    class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                                    <button data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                                </form>
 
                             </div>
 
@@ -75,6 +77,22 @@
     <footer>
         <p>&copy; 2025 Loja de Carros. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="loginCadastro.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('typeLoginEmail').value;
+            const senha = document.getElementById('typeLoginSenha').value;
+
+            if (loginUser(email, senha)) {
+                window.location.href = 'index.html';
+            } else {
+                alert('E-mail ou senha incorretos.');
+            }
+        });
+    </script>
 </body>
 
 </html>
