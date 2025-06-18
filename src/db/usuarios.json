@@ -39,6 +39,14 @@
       "telefone": "123",
       "senha": "123",
       "admin": false
+    },
+    {
+      "id": "e6e15092-3ec1-4963-832b-41448b3c2857",
+      "nome": "leo",
+      "email": "123@email.com",
+      "telefone": "123",
+      "senha": "123",
+      "admin": true
     }
   ]
 }
