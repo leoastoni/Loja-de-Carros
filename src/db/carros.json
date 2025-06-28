@@ -168,15 +168,5 @@
     "preco": "R$110.000",
     "imagem": "https://revistacarro.com.br/wp-content/uploads/2019/11/Honda-Civic-EXL-1.jpg",
     "info": "Carro confortável para a família."
-  },
-  {
-    "id": 1751128315904,
-    "nome": "Camaro",
-    "marca": "Chevrolet ",
-    "ano": "2010",
-    "km": "120.000",
-    "preco": "R$200.000",
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxleN3ey7qbcfHaaSUoe9v-wOlgpZAWSGQw&s",
-    "info": "Esportivo americano equipado com um motor v8."
   }
 ]

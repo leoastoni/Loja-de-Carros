@@ -205,3 +205,25 @@ tbody td {
 .btn-excluir:hover {
   background: #232526;
 }
+
+.btn-voltar {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 10px 24px;
+  background-color: #007bff;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  letter-spacing: 1px;
+}
+
+.btn-voltar:hover {
+  background-color: #0056b3;
+  color: #fff !important;
+  transform: scale(1.05);
+}
