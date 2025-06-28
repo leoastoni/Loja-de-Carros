@@ -168,15 +168,5 @@
     "preco": "R$110.000",
     "imagem": "https://revistacarro.com.br/wp-content/uploads/2019/11/Honda-Civic-EXL-1.jpg",
     "info": "Carro confortável para a família."
-  },
-  {
-    "id": 1750208554214,
-    "nome": "Camaro",
-    "marca": "Chevrolet",
-    "ano": "2010",
-    "km": "110.000",
-    "preco": "R$190.000",
-    "imagem": "https://autobusiness.com.br/_next/image?url=https%3A%2F%2Fimage.webmotors.com.br%2F_fotos%2FanuncioUsados%2Fgrande%2F2025%2F202501%2F20250109%2Fchevrolet-camaro-6-2-v8-gasolina-ss-automatico-wmimagem19544198317.webp%3Fw%3D1920%26h%3D1080%26q%3D100&w=828&q=100",
-    "info": "Esportivo americano, equipado com motor v8."
   }
 ]
