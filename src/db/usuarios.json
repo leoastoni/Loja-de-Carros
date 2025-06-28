@@ -47,6 +47,14 @@
       "telefone": "123",
       "senha": "123",
       "admin": true
+    },
+    {
+      "id": "68f02995-acab-4061-8445-03b733585820",
+      "nome": "usuario1",
+      "email": "usuario1@email.com",
+      "telefone": "123",
+      "senha": "123",
+      "admin": true
     }
   ]
 }
